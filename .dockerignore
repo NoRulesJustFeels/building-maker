@@ -1,0 +1,19 @@
+# ignore various standard-ish
+.dockerignore
+Dockerfile
+Dockerfile.prod
+docker-compose.*
+yarn-error.log
+nginx.conf
+Makefile
+.git/
+
+# ignore project specific
+node_modules/
+dist/
+.parcel-cache/
+TODO.txt
+
+# env files
+.env*
+!.env.production.local
