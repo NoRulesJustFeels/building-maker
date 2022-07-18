@@ -1,5 +1,5 @@
 {
-    "name": "vanilla",
+    "name": "building-maker",
     "version": "1.0.1",
     "description": "Building maker project",
     "license": "MIT",
@@ -16,12 +16,11 @@
         "serve-static": "^1.15.0"
     },
     "devDependencies": {
-        "@babylonjs/core": "^5.11.0",
-        "@babylonjs/gui": "^5.11.0",
+        "@babylonjs/core": "^5.12.1",
+        "@babylonjs/gui": "^5.12.1",
         "@babylonjs/materials": "^5.12.1",
         "@babylonjs/serializers": "^5.12.1",
         "axios": "^0.27.2",
-        "babylonjs-serializers": "^5.12.1",
         "buffer": "^6.0.3",
         "earcut": "^2.2.3",
         "parcel": "^2.4.1",
