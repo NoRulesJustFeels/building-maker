@@ -1,3 +1,4 @@
+
 import './styles.css'
 
 import * as BABYLON from '@babylonjs/core'
@@ -421,9 +422,9 @@ const calculateRectangularFloor = () => {
     const centerZ = 0
 
     // Arbitrary transformations for fitting a rectangle in the place boundary
-    const SCALES = [1, 0.9, 1.1, 0.8, 1.2, 0.7, 1.3, 0.5, 1.5]
-    const ROTATIONS = [0, BABYLON.Angle.FromDegrees(30).radians(), BABYLON.Angle.FromDegrees(60).radians(), BABYLON.Angle.FromDegrees(90).radians(), BABYLON.Angle.FromDegrees(120).radians(), BABYLON.Angle.FromDegrees(150).radians()]
-    const DISPLACEMENTS = [0, 2, 4, 6, 8, 10, -2, -4, -6, -8, -10]
+    const SCALES = [1, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5]
+    const ROTATIONS = [0, BABYLON.Angle.FromDegrees(30).radians(), BABYLON.Angle.FromDegrees(45).radians(), BABYLON.Angle.FromDegrees(60).radians(), BABYLON.Angle.FromDegrees(75).radians(), BABYLON.Angle.FromDegrees(90).radians(), BABYLON.Angle.FromDegrees(105).radians(), BABYLON.Angle.FromDegrees(120).radians(), BABYLON.Angle.FromDegrees(135).radians(), BABYLON.Angle.FromDegrees(150).radians()]
+    const DISPLACEMENTS = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -1, -2, -3, -4, -5, -6, -7, -8, -9, -10]
 
     // Top view dimensions
     let width = maxX / 2
