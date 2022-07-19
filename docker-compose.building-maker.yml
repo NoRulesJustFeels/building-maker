@@ -9,7 +9,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 9053:9053
+      - 9054:9054
 
 networks:
   default:
