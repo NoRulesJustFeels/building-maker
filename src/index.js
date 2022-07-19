@@ -710,7 +710,7 @@ const makeBuilding = () => {
             window2.position.y = floorOffset + FLOOR_HEIGHT / 2 + WINDOW_HEIGHT / 2
 
             // https://doc.babylonjs.com/typedoc/classes/BABYLON.CSG
-            buildingCsg = BABYLON.CSG.FromMesh(wallsMesh)
+            let buildingCsg = BABYLON.CSG.FromMesh(wallsMesh)
             let window1Csg = BABYLON.CSG.FromMesh(window1)
             let window2Csg = BABYLON.CSG.FromMesh(window2)
 
@@ -741,7 +741,7 @@ const makeBuilding = () => {
             window2.position.y = floorOffset + FLOOR_HEIGHT / 2 + WINDOW_HEIGHT / 2
 
             // https://doc.babylonjs.com/typedoc/classes/BABYLON.CSG
-            buildingCsg = BABYLON.CSG.FromMesh(wallsMesh)
+            let buildingCsg = BABYLON.CSG.FromMesh(wallsMesh)
             let window1Csg = BABYLON.CSG.FromMesh(window1)
             let window2Csg = BABYLON.CSG.FromMesh(window2)
 
@@ -768,7 +768,7 @@ const makeBuilding = () => {
             window.position.y = floorOffset + FLOOR_HEIGHT / 2 + WINDOW_HEIGHT / 2
 
             // https://doc.babylonjs.com/typedoc/classes/BABYLON.CSG
-            buildingCsg = BABYLON.CSG.FromMesh(wallsMesh)
+            let buildingCsg = BABYLON.CSG.FromMesh(wallsMesh)
             let windowCsg = BABYLON.CSG.FromMesh(window)
 
             subtractCsg = buildingCsg.subtract(windowCsg)
@@ -803,7 +803,7 @@ const makeBuilding = () => {
             window.position.y = floorOffset + FLOOR_HEIGHT / 2 + WINDOW_HEIGHT / 2
 
             // https://doc.babylonjs.com/typedoc/classes/BABYLON.CSG
-            buildingCsg = BABYLON.CSG.FromMesh(wallsMesh)
+            let buildingCsg = BABYLON.CSG.FromMesh(wallsMesh)
             let windowCsg = BABYLON.CSG.FromMesh(window)
 
             subtractCsg = buildingCsg.subtract(windowCsg)
@@ -842,7 +842,7 @@ const makeBuilding = () => {
             window2.position.y = floorOffset + FLOOR_HEIGHT / 2 + WINDOW_HEIGHT / 2
 
             // https://doc.babylonjs.com/typedoc/classes/BABYLON.CSG
-            buildingCsg = BABYLON.CSG.FromMesh(wallsMesh)
+            let buildingCsg = BABYLON.CSG.FromMesh(wallsMesh)
             let window1Csg = BABYLON.CSG.FromMesh(window1)
             let window2Csg = BABYLON.CSG.FromMesh(window2)
 
@@ -868,7 +868,7 @@ const makeBuilding = () => {
             window.position.y = floorOffset + FLOOR_HEIGHT / 2 + WINDOW_HEIGHT / 2
 
             // https://doc.babylonjs.com/typedoc/classes/BABYLON.CSG
-            buildingCsg = BABYLON.CSG.FromMesh(wallsMesh)
+            let buildingCsg = BABYLON.CSG.FromMesh(wallsMesh)
             let windowCsg = BABYLON.CSG.FromMesh(window)
 
             subtractCsg = buildingCsg.subtract(windowCsg)
@@ -917,7 +917,7 @@ const makeBuilding = () => {
             window2.rotateAround(CENTER_WORLD_SPACE, BABYLON.Axis.Y, Math.PI / 2)
 
             // https://doc.babylonjs.com/typedoc/classes/BABYLON.CSG
-            buildingCsg = BABYLON.CSG.FromMesh(wallsMesh)
+            let buildingCsg = BABYLON.CSG.FromMesh(wallsMesh)
             let window1Csg = BABYLON.CSG.FromMesh(window1)
             let window2Csg = BABYLON.CSG.FromMesh(window2)
 
@@ -944,7 +944,7 @@ const makeBuilding = () => {
             window.rotateAround(CENTER_WORLD_SPACE, BABYLON.Axis.Y, Math.PI / 2)
 
             // https://doc.babylonjs.com/typedoc/classes/BABYLON.CSG
-            buildingCsg = BABYLON.CSG.FromMesh(wallsMesh)
+            let buildingCsg = BABYLON.CSG.FromMesh(wallsMesh)
             let windowCsg = BABYLON.CSG.FromMesh(window)
 
             subtractCsg = buildingCsg.subtract(windowCsg)
@@ -977,7 +977,7 @@ const makeBuilding = () => {
             window.rotateAround(CENTER_WORLD_SPACE, BABYLON.Axis.Y, Math.PI / 2)
 
             // https://doc.babylonjs.com/typedoc/classes/BABYLON.CSG
-            buildingCsg = BABYLON.CSG.FromMesh(wallsMesh)
+            let buildingCsg = BABYLON.CSG.FromMesh(wallsMesh)
             let windowCsg = BABYLON.CSG.FromMesh(window)
 
             subtractCsg = buildingCsg.subtract(windowCsg)
@@ -1014,7 +1014,7 @@ const makeBuilding = () => {
           window2.position.y = floorOffset + FLOOR_HEIGHT - 0.5
 
           // https://doc.babylonjs.com/typedoc/classes/BABYLON.CSG
-          buildingCsg = BABYLON.CSG.FromMesh(wallsMesh)
+          let buildingCsg = BABYLON.CSG.FromMesh(wallsMesh)
           let window1Csg = BABYLON.CSG.FromMesh(window1)
           let window2Csg = BABYLON.CSG.FromMesh(window2)
 
@@ -1137,7 +1137,7 @@ const makeBuilding = () => {
             holeFactor = (scaledWidth - 2.5 * STAIRS_WIDTH) / scaledWidth
           }
           // No hole if the factor is too small
-          holes = []
+          let holes = []
           if (holeFactor > 0.1) {
             holes = [[new BABYLON.Vector3(-scaledWidth * holeFactor, 0, -scaledHeight * holeFactor), new BABYLON.Vector3(scaledWidth * holeFactor, 0, -scaledHeight * holeFactor), new BABYLON.Vector3(scaledWidth * holeFactor, 0, scaledHeight * holeFactor), new BABYLON.Vector3(-scaledWidth * holeFactor, 0, scaledHeight * holeFactor)]]
           }
